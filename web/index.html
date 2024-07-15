@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Workflow Runner</title>
+</head>
+<body>
+    <h1>File Upload and Workflow Runner</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit">Upload File</button>
+    </form>
+    <button id="runButton">Run Workflow</button>
+    <h2>Results</h2>
+    <table id="resultsTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Input Price</th>
+                <th>Output Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        document.getElementById('uploadForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const fileInput = document.getElementById('fileInput');
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            const response = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            alert(result.message);
+        };
+
+        document.getElementById('runButton').onclick = async () => {
+            const response = await fetch('/api/run-workflow', {
+                method: 'POST'
+            });
+            const result = await response.json();
+            alert(result.message);
+            if (result.results) {
+                updateResultsTable(result.results);
+            }
+        };
+
+        async function fetchResults() {
+            const response = await fetch('/api/get-results', {
+                method: 'GET'
+            });
+            const result = await response.json();
+            if (result.results) {
+                updateResultsTable(result.results);
+            }
+        }
+
+        function updateResultsTable(results) {
+            const tableBody = document.querySelector('#resultsTable tbody');
+            tableBody.innerHTML = '';
+            results.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${row.name}</td>
+                    <td>${row.input_price}</td>
+                    <td>${row.output_price}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Fetch initial results when the page loads
+        window.onload = fetchResults;
+    </script>
+</body>
+</html>
