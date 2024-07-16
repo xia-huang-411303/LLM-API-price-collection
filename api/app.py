@@ -14,7 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 API_KEY = os.environ.get('API_KEY')
 
 
-@app.route('/upload', methods=['POST'])
+@app.route('/api/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
@@ -28,7 +28,7 @@ def upload_file():
     return jsonify({"message": "File uploaded successfully", "filepath": filepath}), 200
 
 
-@app.route('/run-workflow', methods=['POST'])
+@app.route('/api/run-workflow', methods=['POST'])
 def run_workflow():
     response = requests.post(
         'http://863deprd.tpddns.cn/v1/workflows/run',
@@ -55,7 +55,7 @@ def run_workflow():
     return jsonify({"message": "Workflow executed successfully"}), 200
 
 
-@app.route('/get-results', methods=['GET'])
+@app.route('/api/get-results', methods=['GET'])
 def get_results():
     results = []
     if os.path.exists(RESULTS_FILE):

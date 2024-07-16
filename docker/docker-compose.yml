@@ -19,5 +19,5 @@ services:
     ports:
       - "5011:5000"
     environment:
-      # - API_KEY=app-RPbXiETBBDhaYT4ab5WQnwFs # 生产用
-      - API_KEY=app-5DJwE74ZkYcbteeUm9xQ7HiK # 测试用
+      - API_KEY=app-RPbXiETBBDhaYT4ab5WQnwFs # 生产用
+      # - API_KEY=app-5DJwE74ZkYcbteeUm9xQ7HiK # 测试用

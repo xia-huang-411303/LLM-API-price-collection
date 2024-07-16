@@ -1,0 +1,953 @@
+app:
+  description: ''
+  icon: "\U0001F916"
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: "\u5927\u6A21\u578B\u8D44\u8D39\u91C7\u96C6"
+kind: app
+version: 0.1.0
+workflow:
+  features:
+    file_upload:
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        sourceType: start
+        targetType: http-request
+      id: 1720514991147-source-1720515024769-target
+      source: '1720514991147'
+      sourceHandle: source
+      target: '1720515024769'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: iteration
+      id: 1720518282880-source-1720518849776-target
+      source: '1720518282880'
+      sourceHandle: source
+      target: '1720518849776'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: iteration
+        targetType: code
+      id: 1720518849776-source-1720519160114-target
+      source: '1720518849776'
+      sourceHandle: source
+      target: '1720519160114'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: iteration
+      id: 1720576207850-source-1720576201225-target
+      source: '1720576207850'
+      sourceHandle: source
+      target: '1720576201225'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: iteration
+        targetType: code
+      id: 1720576201225-source-1720582107987-target
+      source: '1720576201225'
+      sourceHandle: source
+      target: '1720582107987'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: http-request
+        targetType: if-else
+      id: 1720515024769-source-1720666025827-target
+      source: '1720515024769'
+      sourceHandle: source
+      target: '1720666025827'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 1720666025827-true-1720576207850-target
+      source: '1720666025827'
+      sourceHandle: 'true'
+      target: '1720576207850'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: http-request
+        targetType: if-else
+      id: 1720515663724-source-1720666060105-target
+      source: '1720515663724'
+      sourceHandle: source
+      target: '1720666060105'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 1720666060105-true-1720518282880-target
+      source: '1720666060105'
+      sourceHandle: 'true'
+      target: '1720518282880'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 1720666025827-false-1720666116764-target
+      source: '1720666025827'
+      sourceHandle: 'false'
+      target: '1720666116764'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: variable-aggregator
+        targetType: http-request
+      id: 1720666155515-source-1720515663724-target
+      source: '1720666155515'
+      sourceHandle: source
+      target: '1720515663724'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: variable-aggregator
+      id: 1720666116764-source-1720666155515-target
+      source: '1720666116764'
+      sourceHandle: source
+      target: '1720666155515'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: if-else
+        targetType: code
+      id: 1720666060105-false-17206662293270-target
+      source: '1720666060105'
+      sourceHandle: 'false'
+      target: '17206662293270'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: variable-aggregator
+      id: 17206662293270-source-1720666094281-target
+      source: '17206662293270'
+      sourceHandle: source
+      target: '1720666094281'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: variable-aggregator
+        targetType: code
+      id: 1720666094281-source-1720576774885-target
+      source: '1720666094281'
+      sourceHandle: source
+      target: '1720576774885'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: end
+      id: 1720576774885-source-1720519488665-target
+      source: '1720576774885'
+      sourceHandle: source
+      target: '1720519488665'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: code
+      id: 1720582107987-source-17211161372300-target
+      source: '1720582107987'
+      sourceHandle: source
+      target: '17211161372300'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: variable-aggregator
+      id: 17211161372300-source-1720666155515-target
+      source: '17211161372300'
+      sourceHandle: source
+      target: '1720666155515'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: code
+      id: 1720519160114-source-17211164011270-target
+      source: '1720519160114'
+      sourceHandle: source
+      target: '17211164011270'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        sourceType: code
+        targetType: variable-aggregator
+      id: 17211164011270-source-1720666094281-target
+      source: '17211164011270'
+      sourceHandle: source
+      target: '1720666094281'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: "\u5F00\u59CB"
+        type: start
+        variables: []
+      height: 52
+      id: '1720514991147'
+      position:
+        x: 30
+        y: 268
+      positionAbsolute:
+        x: 30
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        authorization:
+          config:
+            api_key: ''
+            type: basic
+          type: no-auth
+        body:
+          data: ''
+          type: none
+        desc: ''
+        headers: ''
+        method: get
+        params: ''
+        selected: false
+        timeout:
+          max_connect_timeout: 0
+          max_read_timeout: 0
+          max_write_timeout: 0
+        title: "json\u683C\u5F0F"
+        type: http-request
+        url: http://192.168.0.129:8011/data/json.json
+        variables: []
+      height: 104
+      id: '1720515024769'
+      position:
+        x: 332
+        y: 268
+      positionAbsolute:
+        x: 332
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        authorization:
+          config: null
+          type: no-auth
+        body:
+          data: ''
+          type: none
+        desc: ''
+        headers: ''
+        method: get
+        params: ''
+        selected: false
+        timeout:
+          max_connect_timeout: 0
+          max_read_timeout: 0
+          max_write_timeout: 0
+        title: "html\u683C\u5F0F"
+        type: http-request
+        url: http://192.168.0.129:8011/data/html.json
+        variables: []
+      height: 104
+      id: '1720515663724'
+      position:
+        x: 2579
+        y: 268
+      positionAbsolute:
+        x: 2579
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import json\ndef main(json_string: str) -> dict:\n    infos = json.loads(json_string)\n\
+          \    infos = infos[0]\n    results = []\n    for k in infos:\n        if\
+          \ len(infos[k])>0:\n            results += [f'\"platform\":\"{k}\"\\n' +\
+          \ infos[k]]\n    return {\"results\": results}"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[string]
+        selected: false
+        title: "\u4FE1\u606F\u62C6\u52062"
+        type: code
+        variables:
+        - value_selector:
+          - '1720515663724'
+          - body
+          variable: json_string
+      height: 52
+      id: '1720518282880'
+      position:
+        x: 3183
+        y: 398.5
+      positionAbsolute:
+        x: 3183
+        y: 398.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        desc: ''
+        height: 206
+        iterator_selector:
+        - '1720518282880'
+        - results
+        output_selector:
+        - '1720518864410'
+        - text
+        output_type: array[string]
+        selected: false
+        startNodeType: llm
+        start_node_id: '1720518864410'
+        title: "\u8FED\u4EE3\u62BD\u53D62"
+        type: iteration
+        width: 387
+      height: 206
+      id: '1720518849776'
+      position:
+        x: 3485
+        y: 401
+      positionAbsolute:
+        x: 3485
+        y: 401
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 387
+      zIndex: 1
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        isInIteration: true
+        isIterationStart: true
+        iteration_id: '1720518849776'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: glm-4
+          provider: zhipuai
+        prompt_template:
+        - id: 08e691cb-ce77-4dfe-a88e-64676404608f
+          role: system
+          text: "## \u4EFB\u52A1\u63CF\u8FF0\n\u8BF7\u4ECE\u7F51\u9875\u6587\u672C\
+            \u4E2D\u63D0\u53D6\u5927\u6A21\u578B\u670D\u52A1\u7684\u8D44\u8D39\u4FE1\
+            \u606F,\u5305\u62EC:\n```\n{\n\t'platform':'\u6A21\u578B\u4F9B\u5E94\u5546\
+            \u540D\u79F0,string',\n\t'name':'\u6A21\u578B,\u53C8\u79F0\u6A21\u578B\
+            \u578B\u53F7\u3001\u6A21\u578B\u540D\u79F0,string',\n\t'input_price':'\u8F93\
+            \u5165\u4EF7\u683C,float',\n\t'output_price':'\u8F93\u51FA\u4EF7\u683C\
+            ,float',\n}\n```\n\u4EF7\u683C\u5305\u62EC\u8F93\u5165\u4EF7\u683C\u548C\
+            \u8F93\u51FA\u4EF7\u683C\uFF0C\u5982\u679C\u63D0\u4F9B\u7684\u4FE1\u606F\
+            \u4E2D\u53EA\u6709\u4E00\u4E2A\u4EF7\u683C\uFF0C\u5219\u8BF4\u660E\u8F93\
+            \u5165\u4EF7\u683C\u548C\u8F93\u51FA\u4EF7\u683C\u4E00\u81F4\n\u6700\u7EC8\
+            \u8F93\u51FA\u7684\u4EF7\u683C\u7684\u5355\u4F4D\u90FD\u4E3A\u5143/\u5343\
+            tokens\uFF0C\u5176\u4E2D 1M(\u767E\u4E07) = 1000k(\u5343) = 1000000\n\u9650\
+            \u65F6\u514D\u8D39\u6216\u8005\u514D\u8D39\u7684\u4EF7\u683C\u4FE1\u606F\
+            \u90FD\u586B 0.0\n\n## \u7ED3\u679C\u793A\u4F8B\n```json\n[\n\t{\n\t\t\
+            \"platform\":\"\u667A\u8C31\",\n\t\t\"name\":\"GLM-4-0520\",\n\t\t\"input_price\"\
+            :0.05,\n\t\t\"output_price\":0.1\n\t},\n\t\xB7\xB7\xB7\n\t{\n\t\t\"platform\"\
+            :\"\u767E\u5DDD\",\n\t\t\"name\":\"Baichuan2\",\n\t\t\"input_price\":0.1,\n\
+            \t\t\"output_price\":0.1\n\t}\n]\n```\n"
+        - id: 2bd41d5b-3af4-4337-95c9-0d192eb5c1d7
+          role: user
+          text: "## \u7F51\u9875\u6587\u672C\n{{#1720518849776.item#}}"
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      extent: parent
+      height: 96
+      id: '1720518864410'
+      parentId: '1720518849776'
+      position:
+        x: 117
+        y: 85
+      positionAbsolute:
+        x: 3602
+        y: 486
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+      zIndex: 1001
+    - data:
+        code: "import re\nimport json\n\ndef loads_json(json_str) -> dict:\n    result\
+          \ = []\n    if json_str:\n        json_str = re.search(r'\\[.*?\\]', json_str,\
+          \ re.DOTALL)\n        if json_str:\n            try:\n                result\
+          \ = json.loads(json_str.group(0))\n            except json.JSONDecodeError\
+          \ as E:\n                pass\n    return result\n\n\ndef main(output) ->\
+          \ dict:\n    results = []\n    for json_str in output:\n        single_result\
+          \ = loads_json(json_str)\n        if single_result and isinstance(single_result,\
+          \ list):\n            results += single_result\n    return {\n        \"\
+          results\": results\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u7ED3\u679C\u5408\u5E762"
+        type: code
+        variables:
+        - value_selector:
+          - '1720518849776'
+          - output
+          variable: output
+      height: 52
+      id: '1720519160114'
+      position:
+        x: 3932
+        y: 401
+      positionAbsolute:
+        x: 3932
+        y: 401
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1720576774885'
+          - results
+          variable: results
+        selected: false
+        title: "\u7ED3\u675F"
+        type: end
+      height: 88
+      id: '1720519488665'
+      position:
+        x: 5140
+        y: 268
+      positionAbsolute:
+        x: 5140
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        desc: ''
+        height: 201
+        iterator_selector:
+        - '1720576207850'
+        - result
+        output_selector:
+        - '1720576330164'
+        - text
+        output_type: array[string]
+        selected: false
+        startNodeType: llm
+        start_node_id: '1720576330164'
+        title: "\u8FED\u4EE3\u62BD\u53D61"
+        type: iteration
+        width: 375
+      height: 201
+      id: '1720576201225'
+      position:
+        x: 1238
+        y: 398.5
+      positionAbsolute:
+        x: 1238
+        y: 398.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 375
+      zIndex: 1
+    - data:
+        code: "import json\nchunk_size = 7\n\ndef funk(data):\n  return '\u514D\u8D39\
+          ' in data['\u8BA1\u91CF\u5355\u4EF7'] or 'tokens' in data['\u8BA1\u91CF\u5355\
+          \u4EF7']\n\ndef main(json_string: str) -> list:\n  data_list = json.loads(json_string)\n\
+          \  data_list = [data for data in data_list if funk(data)]\n  chunked_list\
+          \ = [\n    json.dumps(data_list[i:i + chunk_size], indent=2, ensure_ascii=False)\n\
+          \    for i in range(0, len(data_list), chunk_size)\n  ]\n  return {\"result\"\
+          : chunked_list}"
+        code_language: python3
+        desc: ''
+        outputs:
+          result:
+            children: null
+            type: array[string]
+        selected: false
+        title: "\u4FE1\u606F\u62C6\u52061"
+        type: code
+        variables:
+        - value_selector:
+          - '1720515024769'
+          - body
+          variable: json_string
+      height: 52
+      id: '1720576207850'
+      position:
+        x: 936
+        y: 398.5
+      positionAbsolute:
+        x: 936
+        y: 398.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        isInIteration: true
+        isIterationStart: true
+        iteration_id: '1720576201225'
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: glm-4
+          provider: zhipuai
+        prompt_template:
+        - id: 42697af8-cfc5-4d66-8687-4cf7a8736a22
+          role: system
+          text: "## \u4EFB\u52A1\u63CF\u8FF0\n\u8BF7\u4ECE\u7528\u6237\u8F93\u5165\
+            \u4E2D\u63D0\u53D6\u5927\u6A21\u578B\u670D\u52A1\u7684\u8D44\u8D39\u4FE1\
+            \u606F,\u5305\u62EC:\n```\n{\n\t'name':'\u6A21\u578B,\u53C8\u79F0\u6A21\
+            \u578B\u578B\u53F7\u3001\u6A21\u578B\u540D\u79F0,string',\n\t'input_price':'\u8F93\
+            \u5165\u4EF7\u683C,float',\n\t'output_price':'\u8F93\u51FA\u4EF7\u683C\
+            ,float',\n}\n```\n\u4EF7\u683C\u5305\u62EC\u8F93\u5165\u4EF7\u683C\u548C\
+            \u8F93\u51FA\u4EF7\u683C\uFF0C\u5982\u679C\u63D0\u4F9B\u7684\u4FE1\u606F\
+            \u4E2D\u53EA\u6709\u4E00\u4E2A\u4EF7\u683C\uFF0C\u5219\u8BF4\u660E\u8F93\
+            \u5165\u4EF7\u683C\u548C\u8F93\u51FA\u4EF7\u683C\u4E00\u81F4\n\u4EF7\u683C\
+            \u7684\u5355\u4F4D\u90FD\u4E3A\u5143/\u5343tokens\uFF0C\u5176\u4E2D 1\u5343\
+            tokens = 1000tokens\n\u9650\u65F6\u514D\u8D39\u6216\u8005\u514D\u8D39\u7684\
+            \u4EF7\u683C\u4FE1\u606F\u90FD\u586B 0.0\n\n## \u7ED3\u679C\u793A\u4F8B\
+            \n```json\n[\n\t{\n\t\t\"name\":\"GLM-4-0520\",\n\t\t\"input_price\":0.05,\n\
+            \t\t\"output_price\":0.1\n\t},\n\t\xB7\xB7\xB7\n\t{\n\t\t\"name\":\"Baichuan2\"\
+            ,\n\t\t\"input_price\":0.1,\n\t\t\"output_price\":0.1\n\t}\n]\n```"
+        - id: c394966c-cdb9-4102-bc1b-1959b0dc4388
+          role: user
+          text: '{{#1720576201225.item#}}'
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      extent: parent
+      height: 96
+      id: '1720576330164'
+      parentId: '1720576201225'
+      position:
+        x: 117
+        y: 85
+      positionAbsolute:
+        x: 1355
+        y: 483.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+      zIndex: 1001
+    - data:
+        code: "\ndef main(results1, results2) -> dict:\n    return {\n        \"results\"\
+          : {\n            \"results\": results1 + results2\n        }\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: object
+        selected: false
+        title: "\u6700\u7EC8\u5408\u5E76"
+        type: code
+        variables:
+        - value_selector:
+          - '1720666155515'
+          - output
+          variable: results1
+        - value_selector:
+          - '1720666094281'
+          - output
+          variable: results2
+      height: 52
+      id: '1720576774885'
+      position:
+        x: 4838
+        y: 268
+      positionAbsolute:
+        x: 4838
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import re\nimport json\n\ndef loads_json(json_str) -> dict:\n    result\
+          \ = []\n    if json_str:\n        json_str = re.search(r'\\[.*?\\]', json_str,\
+          \ re.DOTALL)\n        if json_str:\n            try:\n                result\
+          \ = json.loads(json_str.group(0))\n            except json.JSONDecodeError\
+          \ as E:\n                pass\n    return result\n\n\ndef main(output) ->\
+          \ dict:\n    results = []\n    for json_str in output:\n        single_result\
+          \ = loads_json(json_str)\n        if single_result and isinstance(single_result,\
+          \ list):\n            results += single_result\n    return {\n        \"\
+          results\": results\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u7ED3\u679C\u5408\u5E761"
+        type: code
+        variables:
+        - value_selector:
+          - '1720576201225'
+          - output
+          variable: output
+      height: 52
+      id: '1720582107987'
+      position:
+        x: 1673
+        y: 398.5
+      positionAbsolute:
+        x: 1673
+        y: 398.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: '='
+            id: '1720666029407'
+            value: '200'
+            variable_selector:
+            - '1720515024769'
+            - status_code
+          logical_operator: and
+        conditions:
+        - comparison_operator: '='
+          id: '1720666029407'
+          value: '200'
+          variable_selector:
+          - '1720515024769'
+          - status_code
+        desc: ''
+        logical_operator: and
+        selected: false
+        title: "\u6761\u4EF6\u5206\u652F"
+        type: if-else
+      height: 124
+      id: '1720666025827'
+      position:
+        x: 634
+        y: 268
+      positionAbsolute:
+        x: 634
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: '='
+            id: '1720666062985'
+            value: '200'
+            variable_selector:
+            - '1720515663724'
+            - status_code
+          logical_operator: and
+        conditions:
+        - comparison_operator: '='
+          id: '1720666062985'
+          value: '200'
+          variable_selector:
+          - '1720515663724'
+          - status_code
+        desc: ''
+        logical_operator: and
+        selected: false
+        title: "\u6761\u4EF6\u5206\u652F 2"
+        type: if-else
+      height: 124
+      id: '1720666060105'
+      position:
+        x: 2881
+        y: 268
+      positionAbsolute:
+        x: 2881
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        desc: ''
+        output_type: array[object]
+        selected: false
+        title: "\u53D8\u91CF\u805A\u5408\u56682"
+        type: variable-aggregator
+        variables:
+        - - '17206662293270'
+          - results
+        - - '17211164011270'
+          - results
+      height: 136
+      id: '1720666094281'
+      position:
+        x: 4536
+        y: 268
+      positionAbsolute:
+        x: 4536
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "\ndef main() -> dict:\n    return {\n        \"results\": []\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u8D4B\u4E88\u7A7A\u503C1"
+        type: code
+        variables: []
+      height: 52
+      id: '1720666116764'
+      position:
+        x: 1975
+        y: 268
+      positionAbsolute:
+        x: 1975
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        desc: ''
+        output_type: array[object]
+        selected: false
+        title: "\u53D8\u91CF\u805A\u5408\u56681"
+        type: variable-aggregator
+        variables:
+        - - '1720666116764'
+          - results
+        - - '17211161372300'
+          - results
+      height: 136
+      id: '1720666155515'
+      position:
+        x: 2277
+        y: 268
+      positionAbsolute:
+        x: 2277
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "\ndef main() -> dict:\n    return {\n        \"results\": []\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u8D4B\u4E88\u7A7A\u503C2"
+        type: code
+        variables: []
+      height: 52
+      id: '17206662293270'
+      position:
+        x: 4234
+        y: 268
+      positionAbsolute:
+        x: 4234
+        y: 268
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "def main(results) -> dict:\n    for json_obj in results:\n        json_obj[\"\
+          platform\"] = \"\u7075\u79EF\"\n        json_obj[\"input_price\"] *= 1000\n\
+          \        json_obj[\"output_price\"] *= 1000\n    return {\n        \"results\"\
+          : results\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u7ED3\u679C\u5904\u74061"
+        type: code
+        variables:
+        - value_selector:
+          - '1720582107987'
+          - results
+          variable: results
+      height: 52
+      id: '17211161372300'
+      position:
+        x: 1975
+        y: 398.5
+      positionAbsolute:
+        x: 1975
+        y: 398.5
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "def main(results) -> dict:\n    for json_obj in results:\n        json_obj[\"\
+          input_price\"] *= 1000\n        json_obj[\"output_price\"] *= 1000\n   \
+          \ return {\n        \"results\": results\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          results:
+            children: null
+            type: array[object]
+        selected: false
+        title: "\u7ED3\u679C\u5904\u74062"
+        type: code
+        variables:
+        - value_selector:
+          - '1720582107987'
+          - results
+          variable: results
+      height: 52
+      id: '17211164011270'
+      position:
+        x: 4234
+        y: 401
+      positionAbsolute:
+        x: 4234
+        y: 401
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    viewport:
+      x: -2192.7524876601365
+      y: 327.11095302224624
+      zoom: 0.5781700223645955
