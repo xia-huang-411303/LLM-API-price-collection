@@ -1,563 +1,590 @@
 [
-  {
-    "name": "qwen-long",
-    "input_price": 0.5,
-    "output_price": 2,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-turbo",
-    "input_price": 2,
-    "output_price": 6,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-plus",
-    "input_price": 4,
-    "output_price": 12,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max",
-    "input_price": 40,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max-0428",
-    "input_price": 40,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max-0403",
-    "input_price": 40,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max-0107",
-    "input_price": 40,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max-1201",
-    "input_price": 120,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-max-longcontext",
-    "input_price": 40,
-    "output_price": 120,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-110b-chat",
-    "input_price": 7,
-    "output_price": 14,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-72b-chat",
-    "input_price": 5,
-    "output_price": 10,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-32b-chat",
-    "input_price": 3.5,
-    "output_price": 7,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-14b-chat",
-    "input_price": 2,
-    "output_price": 4,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-7b-chat",
-    "input_price": 1,
-    "output_price": 2,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-0.5b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-72b-chat",
-    "input_price": 20,
-    "output_price": 20,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-14b-chat",
-    "input_price": 8,
-    "output_price": 8,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-7b-chat",
-    "input_price": 6,
-    "output_price": 6,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-1.8b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "baichuan2-13b-chat-v1",
-    "input_price": 8,
-    "output_price": 8,
-    "platform": "灵积"
-  },
-  {
-    "name": "ChatGLM-6b-v2",
-    "input_price": 6,
-    "output_price": 6,
-    "platform": "灵积"
-  },
-  {
-    "name": "text-embedding-v1",
-    "input_price": 0.7,
-    "output_price": 0.7,
-    "platform": "灵积"
-  },
-  {
-    "name": "text-embedding-async-v1",
-    "input_price": 0.7,
-    "output_price": 0.7,
-    "platform": "灵积"
-  },
-  {
-    "name": "text-embedding-v2",
-    "input_price": 0.7,
-    "output_price": 0.7,
-    "platform": "灵积"
-  },
-  {
-    "name": "text-embedding-async-v2",
-    "input_price": 0.7,
-    "output_price": 0.7,
-    "platform": "灵积"
-  },
-  {
-    "name": "wanx-style-cosplay-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "wanx-anytext-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-vl-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-vl-chat-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "baichuan-7b-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "llama2-7b-chat-v2",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "llama2-13b-chat-v2",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "ChatGLM3-6b",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "multimodal-embedding-one-peace-v1",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "facechain-facedetect",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "stable-diffusion-xl",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "stable-diffusion-v1.5",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "dolly-12b-v2",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "yi-6b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "yi-34b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "aquilachat-7b",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "deepseek-7b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "internlm-7b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "llama3-8b-instruct",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "llama3-70b-instruct",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen2-72b-instruct",
-    "input_price": 5,
-    "output_price": 10,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen2-57b-a14b-instruct",
-    "input_price": 3.5,
-    "output_price": 7,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen2-7b-instruct",
-    "input_price": 1,
-    "output_price": 2,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen2-1.5b-instruct",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen2-0.5b-instruct",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen1.5-1.8b-chat",
-    "input_price": 0,
-    "output_price": 0,
-    "platform": "灵积"
-  },
-  {
-    "name": "qwen-long",
-    "input_price": 0.5,
-    "output_price": 2
-  },
-  {
-    "name": "qwen-turbo",
-    "input_price": 2,
-    "output_price": 6
-  },
-  {
-    "name": "qwen-plus",
-    "input_price": 4,
-    "output_price": 12
-  },
-  {
-    "name": "qwen-max",
-    "input_price": 40,
-    "output_price": 120
-  },
-  {
-    "name": "qwen-max-0428",
-    "input_price": 40,
-    "output_price": 120
-  },
-  {
-    "name": "qwen-max-0403",
-    "input_price": 40,
-    "output_price": 120
-  },
-  {
-    "name": "qwen-max-0107",
-    "input_price": 40,
-    "output_price": 120
-  },
-  {
-    "name": "qwen-max-1201",
-    "input_price": 120,
-    "output_price": 120
-  },
-  {
-    "name": "qwen-max-longcontext",
-    "input_price": 40,
-    "output_price": 120
-  },
-  {
-    "name": "qwen1.5-110b-chat",
-    "input_price": 7,
-    "output_price": 14
-  },
-  {
-    "name": "qwen1.5-72b-chat",
-    "input_price": 5,
-    "output_price": 10
-  },
-  {
-    "name": "qwen1.5-32b-chat",
-    "input_price": 3.5,
-    "output_price": 7
-  },
-  {
-    "name": "qwen1.5-14b-chat",
-    "input_price": 2,
-    "output_price": 4
-  },
-  {
-    "name": "qwen1.5-7b-chat",
-    "input_price": 1,
-    "output_price": 2
-  },
-  {
-    "name": "qwen1.5-0.5b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen-72b-chat",
-    "input_price": 20,
-    "output_price": 20
-  },
-  {
-    "name": "qwen-14b-chat",
-    "input_price": 8,
-    "output_price": 8
-  },
-  {
-    "name": "qwen-7b-chat",
-    "input_price": 6,
-    "output_price": 6
-  },
-  {
-    "name": "qwen-1.8b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "baichuan2-13b-chat-v1",
-    "input_price": 8,
-    "output_price": 8
-  },
-  {
-    "name": "ChatGLM-6b-v2",
-    "input_price": 6,
-    "output_price": 6
-  },
-  {
-    "name": "text-embedding-v1",
-    "input_price": 0.7,
-    "output_price": 0.7
-  },
-  {
-    "name": "text-embedding-async-v1",
-    "input_price": 0.7,
-    "output_price": 0.7
-  },
-  {
-    "name": "text-embedding-v2",
-    "input_price": 0.7,
-    "output_price": 0.7
-  },
-  {
-    "name": "text-embedding-async-v2",
-    "input_price": 0.7,
-    "output_price": 0.7
-  },
-  {
-    "name": "wanx-style-cosplay-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "wanx-anytext-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen-vl-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen-vl-chat-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "baichuan-7b-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "llama2-7b-chat-v2",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "llama2-13b-chat-v2",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "ChatGLM3-6b",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "multimodal-embedding-one-peace-v1",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "facechain-facedetect",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "stable-diffusion-xl",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "stable-diffusion-v1.5",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "dolly-12b-v2",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "yi-6b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "yi-34b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "aquilachat-7b",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "deepseek-7b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "internlm-7b-chat",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "llama3-8b-instruct",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "llama3-70b-instruct",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen2-72b-instruct",
-    "input_price": 5,
-    "output_price": 10
-  },
-  {
-    "name": "qwen2-57b-a14b-instruct",
-    "input_price": 3.5,
-    "output_price": 7
-  },
-  {
-    "name": "qwen2-7b-instruct",
-    "input_price": 1,
-    "output_price": 2
-  },
-  {
-    "name": "qwen2-1.5b-instruct",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen2-0.5b-instruct",
-    "input_price": 0,
-    "output_price": 0
-  },
-  {
-    "name": "qwen1.5-1.8b-chat",
-    "input_price": 0,
-    "output_price": 0
-  }
+    {
+        "name": "qwen-long",
+        "input_price": 0.5,
+        "output_price": 2.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-turbo",
+        "input_price": 2.0,
+        "output_price": 6.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-plus",
+        "input_price": 4.0,
+        "output_price": 12.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max",
+        "input_price": 40.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max-0428",
+        "input_price": 40.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max-0403",
+        "input_price": 40.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max-0107",
+        "input_price": 40.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max-1201",
+        "input_price": 120.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-max-longcontext",
+        "input_price": 40.0,
+        "output_price": 120.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-110b-chat",
+        "input_price": 7.0,
+        "output_price": 14.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-72b-chat",
+        "input_price": 5.0,
+        "output_price": 10.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-32b-chat",
+        "input_price": 3.5,
+        "output_price": 7.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-14b-chat",
+        "input_price": 2.0,
+        "output_price": 4.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-7b-chat",
+        "input_price": 1.0,
+        "output_price": 2.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-0.5b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-72b-chat",
+        "input_price": 20.0,
+        "output_price": 20.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-14b-chat",
+        "input_price": 8.0,
+        "output_price": 8.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-7b-chat",
+        "input_price": 6.0,
+        "output_price": 6.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-1.8b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "baichuan2-13b-chat-v1",
+        "input_price": 8.0,
+        "output_price": 8.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "ChatGLM-6b-v2",
+        "input_price": 6.0,
+        "output_price": 6.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "text-embedding-v1",
+        "input_price": 0.7,
+        "output_price": 0.7,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "text-embedding-async-v1",
+        "input_price": 0.7,
+        "output_price": 0.7,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "text-embedding-v2",
+        "input_price": 0.7,
+        "output_price": 0.7,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "text-embedding-async-v2",
+        "input_price": 0.7,
+        "output_price": 0.7,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "wanx-style-cosplay-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "wanx-anytext-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-vl-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen-vl-chat-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "baichuan-7b-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "llama2-7b-chat-v2",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "llama2-13b-chat-v2",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "ChatGLM3-6b",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "multimodal-embedding-one-peace-v1",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "facechain-facedetect",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "stable-diffusion-xl",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "stable-diffusion-v1.5",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "dolly-12b-v2",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "yi-6b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "yi-34b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "aquilachat-7b",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "deepseek-7b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "internlm-7b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "llama3-8b-instruct",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "llama3-70b-instruct",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen2-72b-instruct",
+        "input_price": 5.0,
+        "output_price": 10.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen2-57b-a14b-instruct",
+        "input_price": 3.5,
+        "output_price": 7.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen2-7b-instruct",
+        "input_price": 1.0,
+        "output_price": 2.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen2-1.5b-instruct",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen2-0.5b-instruct",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "name": "qwen1.5-1.8b-chat",
+        "input_price": 0.0,
+        "output_price": 0.0,
+        "platform": "\u7075\u79ef"
+    },
+    {
+        "platform": "\u963f\u91cc",
+        "name": "Qwen-Long",
+        "input_price": 0.5,
+        "output_price": 2.0
+    },
+    {
+        "platform": "\u963f\u91cc",
+        "name": "\u901a\u4e49\u5343\u95ee-Turbo",
+        "input_price": 2.0,
+        "output_price": 6.0
+    },
+    {
+        "platform": "\u963f\u91cc",
+        "name": "\u901a\u4e49\u5343\u95ee-Plus",
+        "input_price": 4.0,
+        "output_price": 12.0
+    },
+    {
+        "platform": "\u963f\u91cc",
+        "name": "\u901a\u4e49\u5343\u95ee-Max",
+        "input_price": 40.0,
+        "output_price": 120.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE 4.0 Turbo\u7cfb\u5217",
+        "input_price": 30.0,
+        "output_price": 60.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE 4.0\u7cfb\u5217",
+        "input_price": 40.0,
+        "output_price": 120.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE 3.5\u7cfb\u5217",
+        "input_price": 4.0,
+        "output_price": 12.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE Speed\u7cfb\u5217",
+        "input_price": 0.0,
+        "output_price": 0.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "token\u957f\u5ea6\u8ba1\u7b97\u63a5\u53e3",
+        "input_price": 0.6,
+        "output_price": 0.6
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE Lite\u7cfb\u5217",
+        "input_price": 0.0,
+        "output_price": 0.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE-3.5-128k(\u9884\u89c8\u7248)",
+        "input_price": 8.0,
+        "output_price": 24.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE Tiny\u7cfb\u5217",
+        "input_price": 0.0,
+        "output_price": 0.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE-Character\u7cfb\u5217",
+        "input_price": 4.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u767e\u5ea6",
+        "name": "ERNIE Function\u7cfb\u5217",
+        "input_price": 4.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4-0520",
+        "input_price": 100.0,
+        "output_price": 100.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4-AllTools",
+        "input_price": 100.0,
+        "output_price": 100.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4V",
+        "input_price": 50.0,
+        "output_price": 50.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4-AirX",
+        "input_price": 10.0,
+        "output_price": 10.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4-Air",
+        "input_price": 1.0,
+        "output_price": 1.0
+    },
+    {
+        "platform": "\u667a\u8c31",
+        "name": "GLM-4-Flash",
+        "input_price": 0.1,
+        "output_price": 0.1
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-pro",
+        "input_price": 30.0,
+        "output_price": 100.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-standard",
+        "input_price": 4.5,
+        "output_price": 5.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-standard-256k",
+        "input_price": 15.0,
+        "output_price": 60.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-lite",
+        "input_price": 0.0,
+        "output_price": 0.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-role",
+        "input_price": 4.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-funtioncall",
+        "input_price": 4.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-code",
+        "input_price": 4.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-vision",
+        "input_price": 18.0,
+        "output_price": 18.0
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "hunyuan-embedding",
+        "input_price": 0.7,
+        "output_price": 0.7
+    },
+    {
+        "platform": "\u817e\u8baf",
+        "name": "\u817e\u8baf\u5143\u5668\u667a\u80fd\u4f53",
+        "input_price": 100.0,
+        "output_price": 100.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab6.5",
+        "input_price": 30.0,
+        "output_price": 30.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab6.5s",
+        "input_price": 10.0,
+        "output_price": 10.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab6.5t",
+        "input_price": 5.0,
+        "output_price": 5.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab6.5g",
+        "input_price": 5.0,
+        "output_price": 5.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab5.5",
+        "input_price": 15.0,
+        "output_price": 15.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "abab5.5s",
+        "input_price": 5.0,
+        "output_price": 5.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "web search pro(abab6.5s)",
+        "input_price": 60.0,
+        "output_price": 60.0
+    },
+    {
+        "platform": "MINMAX",
+        "name": "web search(abab5.5)",
+        "input_price": 30.0,
+        "output_price": 30.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan4",
+        "input_price": 100.0,
+        "output_price": 100.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan3-Turbo",
+        "input_price": 12.0,
+        "output_price": 12.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan3-Turbo-128k",
+        "input_price": 24.0,
+        "output_price": 24.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan2-Turbo",
+        "input_price": 8.0,
+        "output_price": 8.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan2-Turbo-192k",
+        "input_price": 16.0,
+        "output_price": 16.0
+    },
+    {
+        "platform": "\u767e\u5ddd",
+        "name": "Baichuan2-53B",
+        "input_price": 20.0,
+        "output_price": 20.0
+    },
+    {
+        "platform": "MoonShot",
+        "name": "moonshot-v1-8k",
+        "input_price": 12.0,
+        "output_price": 12.0
+    },
+    {
+        "platform": "MoonShot",
+        "name": "moonshot-v1-32k",
+        "input_price": 24.0,
+        "output_price": 24.0
+    },
+    {
+        "platform": "MoonShot",
+        "name": "moonshot-v1-128k",
+        "input_price": 60.0,
+        "output_price": 60.0
+    }
 ]

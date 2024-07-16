@@ -5,80 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLM API 价格统计</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 </head>
 <body class="container mt-5">
     <h1>LLM API 价格统计</h1>
-    <form id="uploadForm" class="mb-3">
-        <div class="form-group">
+    <form id="uploadForm" class="mb-3 form-inline">
+        <div class="form-group mr-2">
             <input type="file" id="fileInput" name="file" class="form-control-file" required>
         </div>
-        <button type="submit" class="btn btn-primary">上传文件</button>
+        <button type="submit" class="btn btn-primary mr-2">上传数据文件</button>
+        <button id="runButton" type="button" class="btn btn-success">运行工作流</button>
     </form>
-    <button id="runButton" class="btn btn-success mb-3">运行工作流</button>
-    <h2>大模型价格</h2>
-    <table id="resultsTable" class="table table-bordered">
-        <thead class="thead-light">
-            <tr>
-                <th>模型</th>
-                <th>输入价格</th>
-                <th>输出价格</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div id="chart" style="width: 100%; height: 1800px;"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById('uploadForm').onsubmit = async (e) => {
-            e.preventDefault();
-            const fileInput = document.getElementById('fileInput');
-            const formData = new FormData();
-            formData.append('file', fileInput.files[0]);
-
-            const response = await fetch('/api/upload', {
-                method: 'POST',
-                body: formData
-            });
-            const result = await response.json();
-            alert(result.message);
-        };
-
-        document.getElementById('runButton').onclick = async () => {
-            const response = await fetch('/api/run-workflow', {
-                method: 'POST'
-            });
-            const result = await response.json();
-            alert(result.message);
-            if (result.results) {
-                updateResultsTable(result.results);
-            }
-        };
-
-        async function fetchResults() {
-            const response = await fetch('/api/get-results', {
-                method: 'GET'
-            });
-            const result = await response.json();
-            if (result.results) {
-                updateResultsTable(result.results);
-            }
-        }
-
-        function updateResultsTable(results) {
-            const tableBody = document.querySelector('#resultsTable tbody');
-            tableBody.innerHTML = '';
-            results.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td>${row.name}</td>
-                    <td>${row.input_price}</td>
-                    <td>${row.output_price}</td>
-                `;
-                tableBody.appendChild(tr);
-            });
-        }
-
-        window.onload = fetchResults;
-    </script>
+    <script src="script.js"></script> <!-- 引入外部的 JavaScript 文件 -->
 </body>
 </html>
