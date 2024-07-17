@@ -21,8 +21,6 @@ docker compose up -d
 ### 数据清洗
 上传原始数据文件后, 点击运行工作流, 会执行Dify上的数据清洗工作流,  
 自动对采集的前端数据和后端数据进行格式统一, 并保存为`./data/results.json`.  
- > 如果运行工作流失败,可以去[大模型资费采集-数据清洗](http://863deprd.tpddns.cn/workflow/JnnTn3LPwyG8HFNO)直接运行工作流,  
- > 将返回的 JSON OUTPUT 手动保存为 `results.json` 并上传为数据文件
 
 ### 刷新页面
 就能看到更新后的图表了
