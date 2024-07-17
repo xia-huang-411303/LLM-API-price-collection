@@ -46,7 +46,7 @@ function updateChart(results) {
 
     const option = {
         title: {
-            text: '大模型价格统计：人民币/M tokens'
+            text: '大模型单价统计：人民币/M tokens'
         },
         tooltip: {
             trigger: 'axis'
