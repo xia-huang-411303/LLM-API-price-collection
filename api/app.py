@@ -12,6 +12,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Load API key from environment variable
 API_KEY = os.environ.get('API_KEY')
+WORKFLOW_HOST = os.environ.get('WORKFLOW_HOST')
 
 
 @app.route('/api/upload', methods=['POST'])
@@ -31,7 +32,7 @@ def upload_file():
 @app.route('/api/run-workflow', methods=['POST'])
 def run_workflow():
     response = requests.post(
-        'http://863deprd.tpddns.cn/v1/workflows/run',
+        f'{WORKFLOW_HOST}/v1/workflows/run',
         headers={
             'Authorization': f'Bearer {API_KEY}',
             'Content-Type': 'application/json'

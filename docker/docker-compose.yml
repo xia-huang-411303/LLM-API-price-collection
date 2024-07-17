@@ -17,5 +17,7 @@ services:
     volumes:
       - ../data:/data
     environment:
-      - API_KEY=app-RPbXiETBBDhaYT4ab5WQnwFs # 生产用
-      # - API_KEY=app-5DJwE74ZkYcbteeUm9xQ7HiK # 测试用
+      - API_KEY=app-5DJwE74ZkYcbteeUm9xQ7HiK # 测试用
+      # - API_KEY=app-RPbXiETBBDhaYT4ab5WQnwFs # 生产用
+      - WORKFLOW_HOST = http://192.168.0.103 # 内网用
+      # - WORKFLOW_HOST = http://863deprd.tpddns.cn # 公网用
